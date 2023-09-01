@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[a4paper,landscape,margin=0in]{geometry}
+\usepackage{background}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage[english]{babel}
+\usepackage{caption}
+
+\backgroundsetup{scale = 1, angle = 0, opacity = 1, contents = {\includegraphics[width = \paperwidth,height = \paperheight, keepaspectratio]{certificado.pdf}}}
+\begin{document}
+\hspace{8.5cm}
+\begin{minipage}[c]{0.64\linewidth}
+\vspace{4.5cm}
+    \begin{center}
+        {\fontsize{20}{20} \selectfont A Mostra de Ciência e Tecnologia de Minas Gerais - MOCITEC MG constituída pelos eventos Semana da Elétrica, Semana da Eletromecânica - SELMEC - e Semana da Computação, do Centro Federal de Educação Tecnológica de Minas Gerais, Campus Leopoldina, por meio dos representantes legais certifica que}
+    \end{center}
+    \vspace{0.4cm}
+    \begin{center}
+        {\fontsize{40}{40}\selectfont\textit{\textbf{NomeParticipante}}}
+    \end{center}
+    \vspace{0.4cm}
+    \begin{center}
+        {\fontsize{20}{20}\selectfont participou de TotalHoras horas em atividades ofertadas entre os dias 12 e 16 de setembro de 2022.}
+    \end{center}
+    \vspace{0.2cm}
+    \begin{center}
+        {\fontsize{20}{20}\selectfont Leopoldina, 22 de setembro de 2022.}
+    \end{center}
+\end{minipage}
+\newpage
+\NoBgThispage
+%\begin{minipage}[c]{28cm}
+%\vspace{1cm}
+%\Large 
+%Relação de atividades realizadas por
+%\newline 
+%\Large 
+%NomeParticipante
+%newline 
+%\Large 
+%durante a MOCITEC 2022.
+%\end{minipage}
+\begin{table}[H]
+\vspace{1.5cm}
+\centering
+\Large
+\begin{tabular}{| p{21.8cm} | c |} \hline
+Atividade & Carga Horária (Horas)\\ \hline
+Total & TotalHoras\\ \hline
+\end{tabular}
+\caption*{\Large Relação de Atividades realizadas por \textbf{NomeParticipante} durante a MOCITEC 2022.}
+\end{table}
+
+\end{document}
+
