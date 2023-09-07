@@ -31,10 +31,8 @@ for i, row in df1.iterrows():
 # Cria um objeto DataFrame a partir do dicionário horas
 df = pd.DataFrame(horas.items(), columns=['Nome', 'Horas'])
 
-
 # Escreve o DataFrame em uma planilha do Excel
 df.to_excel('horas.xlsx', index=False)
-
 
 print("acabou!")
 
