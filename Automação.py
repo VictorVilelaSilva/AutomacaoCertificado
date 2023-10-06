@@ -11,6 +11,11 @@ visitados = []
 QuantidadePessosas20 = 0
 quantidadePessoasIncritas = df1['Nome dos inscritos'].count()
 
+#caso o ultimo caracter seja um espaço retira ele
+df1["Nome dos inscritos"] = df1["Nome dos inscritos"].apply(lambda x: x.strip())
+df2["Nome Completo:"] = df2["Nome Completo:"].apply(lambda x: x.strip())
+
+
 # Percorre as linhas da primeira planilha
 for i, row in df1.iterrows():
     # Obtém o nome e as horas da linha atual
